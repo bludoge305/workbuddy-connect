@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "workbuddy-connect": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/workbuddy_mcp.py"],
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

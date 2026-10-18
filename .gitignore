@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Plugin runtime state (never commit credentials or caches)
+.workbuddy-*.json
+bridge.json
+bridge.log
+bridge.lock
+provider_config.backup.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

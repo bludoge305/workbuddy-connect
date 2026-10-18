@@ -1,0 +1,33 @@
+{
+  "name": "workbuddy-connect-marketplace",
+  "plugins": [
+    {
+      "name": "workbuddy-connect",
+      "source": "./workbuddy-connect",
+      "version": "0.2.0",
+      "description": "Reuse the signed-in WorkBuddy / WorkBuddy AI desktop app session to give ZCode its model catalog, chat, credit balance and diagnostics over MCP tools, and expose the same models through a loopback OpenAI-compatible bridge that ZCode registers as a normal model provider. Zero configuration: credentials are read from the desktop app's own auth file, refreshed into a plugin-owned copy, and never written back.",
+      "displayName": "WorkBuddy Connect",
+      "displayName_i18n": {
+        "zh-CN": "WorkBuddy 接入"
+      },
+      "description_i18n": {
+        "zh-CN": "复用已登录的 WorkBuddy / WorkBuddy AI 桌面应用登录态，为 ZCode 提供模型目录、对话、积分余额与诊断等 MCP 工具；同时通过本地 OpenAI 兼容桥把 WorkBuddy 模型注册进 ZCode 的模型选择器与模型设置页"
+      },
+      "author": {
+        "name": "Bludoge"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "keywords": [
+        "workbuddy",
+        "codebuddy",
+        "mcp",
+        "model-provider",
+        "glm",
+        "kimi",
+        "deepseek",
+        "minimax"
+      ]
+    }
+  ]
+}
