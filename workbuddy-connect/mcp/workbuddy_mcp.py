@@ -28,7 +28,7 @@ from wbclient import zcode_provider  # noqa: E402
 from wbclient.catalog import model_with_current_promotion  # noqa: E402
 from wbclient.variants import CN, GLOBAL, Variant, VARIANTS, variant_for  # noqa: E402
 
-SERVER_INFO = {"name": "workbuddy-connect", "version": "0.2.0"}
+SERVER_INFO = {"name": "workbuddy-connect", "version": "0.2.1"}
 PROTOCOL_VERSION = "2025-06-18"
 
 VARIANT_IDS = ("cn", "global")

@@ -35,7 +35,7 @@ from . import catalog as catalog_module
 from . import upstream as upstream_module
 from .variants import CN, GLOBAL, VARIANTS, Variant, state_home, variant_for
 DEFAULT_PORT = 38271
-BRIDGE_VERSION = "0.2.0"
+BRIDGE_VERSION = "0.2.1"
 STATE_FILENAME = "bridge.json"
 LOG_FILENAME = "bridge.log"
 MAX_BODY_BYTES = 64 * 1024 * 1024
