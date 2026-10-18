@@ -68,4 +68,5 @@ ZCode 的模型选择器只认 `~/.zcode/v2/provider_config.json` 里声明的�
 ## 安全与合规
 
 - 凭据只读桌面文件；刷新结果写入插件自有副本（0600 权限）；任何令牌不进日志、不出现在工具输出里。
-- 上游是私有客户端接口（协议经 [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) 移植，MIT；其上游参照 workbuddy2api，MIT），WorkBuddy 更新后可能需要调整；仅限个人学习研究使用，与腾讯/WorkBuddy 无关联。
+- 上游是私有客户端接口（协议经 [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) 移植，MIT；其上游参照 workbuddy2api，MIT），WorkBuddy 更新后可能需要调整。
+- **免责声明**：本项目仅供个人学习和研究使用，仅驱动使用者自己的账号在本机调用；使用者需遵守 WorkBuddy 服务条款，因使用产生的任何后果（账号被限制、额度被清空、服务中断等）由使用者自行承担，作者不对任何直接或间接损失负责；本项目与腾讯、WorkBuddy、DeepSeek、ZCode 均无关联，未获其授权或认可，名称仅用于描述兼容关系，商标归各自所有。

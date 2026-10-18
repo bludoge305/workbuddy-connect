@@ -24,6 +24,10 @@ workbuddy-connect/            插件源码
 └── README.md                 完整文档：安装、使用、原理、排障
 ```
 
+## 免责声明
+
+本项目仅供个人学习和研究使用，仅驱动使用者自己的 WorkBuddy / WorkBuddy AI 账号在本机调用，请勿用于商业用途。使用者需遵守 WorkBuddy 的服务条款，因使用本项目产生的任何后果由使用者自行承担，作者不对任何直接或间接损失负责。本项目与腾讯、WorkBuddy、DeepSeek、ZCode 均无关联，未获其授权或认可。上游均为私有客户端接口，非官方开放 API。完整声明见 [workbuddy-connect/README.md](workbuddy-connect/README.md) 的「免责声明」一节。
+
 ## License
 
 MIT，详见 [LICENSE](LICENSE)。
