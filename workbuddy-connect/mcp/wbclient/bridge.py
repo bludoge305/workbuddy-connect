@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import secrets
 import signal
 import subprocess
@@ -75,6 +76,32 @@ DELTA_KEYS = frozenset(
         "function_call",
     }
 )
+
+# ZCode injects its git status into the system message. The line
+# ``Main branch (you will usually use this for PRs): <name>`` trips the
+# WorkBuddy upstream content filter (HTTP 400), so the reminder is dropped
+# while the branch name is kept.
+_GIT_BRANCH_LINE = re.compile(
+    r"Main branch \(you will usually use this for PRs\): ([^\r\n]*)"
+)
+
+
+def _normalize_git_status(text: str) -> str:
+    return _GIT_BRANCH_LINE.sub(r"Main branch: \1", text)
+
+
+def _normalize_messages(messages: list[Any]) -> None:
+    """Rewrite ZCode's git-status reminder in system messages, in place."""
+    for message in messages:
+        if not isinstance(message, dict) or message.get("role") not in ("system", "developer"):
+            continue
+        content = message.get("content")
+        if isinstance(content, str):
+            message["content"] = _normalize_git_status(content)
+        elif isinstance(content, list):
+            for part in content:
+                if isinstance(part, dict) and isinstance(part.get("text"), str):
+                    part["text"] = _normalize_git_status(part["text"])
 
 
 def _clean_delta(delta: dict[str, Any]) -> dict[str, Any]:
@@ -718,6 +745,10 @@ class _BridgeHandler(BaseHTTPRequestHandler):
         if not isinstance(messages, list) or not messages:
             self._error(400, "missing 'messages'")
             return
+
+        # Forward-time normalization: the injected git status line below would
+        # otherwise be rejected by the upstream content filter (400 -> 502).
+        _normalize_messages(messages)
 
         selected = self._selected_variants()
         if not selected:
