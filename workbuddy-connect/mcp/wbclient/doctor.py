@@ -5,7 +5,9 @@ reports cache state without spawning helpers or touching the network. With
 ``live=True`` it additionally attempts a real catalog fetch and credit read
 per signed-in variant.
 
-Ported from corrinehu/dsh-workbuddy-connect's ``doctor`` CLI command.
+Ported from the ``doctor`` CLI command of
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+(MIT License, Copyright © 2026 Corrine Hu).
 """
 
 from __future__ import annotations

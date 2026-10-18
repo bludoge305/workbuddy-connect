@@ -1,8 +1,12 @@
 """WorkBuddy upstream HTTP client: chat streaming, token refresh, catalog, credits.
 
-The wire behavior is ported from corrinehu/dsh-workbuddy-connect
-``src/upstream.ts`` (MIT), whose protocol work itself credits
-Sliverkiss/workbuddy2api (MIT). Uses only the Python standard library.
+The wire behavior is ported from
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+``src/upstream.ts``
+(MIT License, Copyright © 2026 Corrine Hu),
+whose protocol work itself credits
+[Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api)
+(MIT). Uses only the Python standard library.
 
 These are private client interfaces, not an official open API; a WorkBuddy
 update may require adjusting endpoints here.

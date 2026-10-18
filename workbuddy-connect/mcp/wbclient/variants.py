@@ -5,7 +5,10 @@ Both products share one client framework and write their sign-in into the
 base URL and display identity. Everything that varies is collected here so no
 other module carries its own ``if international`` branch.
 
-Ported from corrinehu/dsh-workbuddy-connect ``src/variants.ts`` (MIT).
+Ported from
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+``src/variants.ts``
+(MIT License, Copyright © 2026 Corrine Hu).
 """
 
 from __future__ import annotations

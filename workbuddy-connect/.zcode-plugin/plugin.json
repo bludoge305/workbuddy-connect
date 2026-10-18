@@ -1,7 +1,7 @@
 {
   "name": "workbuddy-connect",
   "version": "0.2.0",
-  "description": "Reuse the signed-in WorkBuddy / WorkBuddy AI desktop app session to give ZCode its model catalog, chat, credit balance and diagnostics over MCP tools, and expose the same models through a loopback OpenAI-compatible bridge that ZCode registers as a normal model provider. Zero configuration: credentials are read from the desktop app's own auth file, refreshed into a plugin-owned copy, and never written back.",
+  "description": "Reuse the signed-in WorkBuddy / WorkBuddy AI desktop app session to give ZCode its model catalog, chat, credit balance and diagnostics over MCP tools, and expose the same models through a loopback OpenAI-compatible bridge that ZCode registers as a normal model provider. Zero configuration: credentials are read from the desktop app's own auth file, refreshed into a plugin-owned copy, and never written back. Protocol ported from corrinehu/dsh-workbuddy-connect (MIT).",
   "author": {
     "name": "Bludoge"
   },

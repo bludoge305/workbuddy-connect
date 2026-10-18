@@ -7,6 +7,8 @@ description: Connect to the signed-in WorkBuddy / WorkBuddy AI desktop app throu
 
 本插件复用已登录的 WorkBuddy（国内版）/ WorkBuddy AI（国际版）桌面应用的登录态，为 ZCode 提供十一个 MCP 工具。两个产品共用一个 `CodeBuddyExtension` 凭据目录、仅文件名不同；账号、模型、积分互不混用，凭据跨区会被拒绝并给出修复提示。
 
+协议移植自 [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)（MIT License，Copyright © 2026 Corrine Hu），其上游参照 [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api)（MIT）。
+
 ## 工具一览
 
 | 工具 | 用途 | 网络 |
@@ -66,4 +68,4 @@ ZCode 的模型选择器只认 `~/.zcode/v2/provider_config.json` 里声明的�
 ## 安全与合规
 
 - 凭据只读桌面文件；刷新结果写入插件自有副本（0600 权限）；任何令牌不进日志、不出现在工具输出里。
-- 上游是私有客户端接口（协议参照 workbuddy2api，MIT），WorkBuddy 更新后可能需要调整；仅限个人学习研究使用，与腾讯/WorkBuddy 无关联。
+- 上游是私有客户端接口（协议经 [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) 移植，MIT；其上游参照 workbuddy2api，MIT），WorkBuddy 更新后可能需要调整；仅限个人学习研究使用，与腾讯/WorkBuddy 无关联。

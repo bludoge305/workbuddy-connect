@@ -2,6 +2,16 @@ MIT License
 
 Copyright (c) 2026 Bludoge
 
+This project is a Python reimplementation of the protocol implemented in
+corrinehu/dsh-workbuddy-connect (https://github.com/corrinehu/dsh-workbuddy-connect):
+
+  MIT License
+
+  Copyright (c) 2026 Corrine Hu
+
+which itself credits Sliverkiss/workbuddy2api
+(https://github.com/Sliverkiss/workbuddy2api), also MIT licensed.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

@@ -6,8 +6,10 @@ file is never written. The effective credential is whichever of the two
 expires later for the *same identity* — the desktop file is the authority on
 who is signed in now.
 
-Ported from corrinehu/dsh-workbuddy-connect ``src/auth.ts`` +
-``desktop-credential-protection.ts`` (MIT).
+Ported from
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+``src/auth.ts`` + ``desktop-credential-protection.ts``
+(MIT License, Copyright © 2026 Corrine Hu).
 
 Security notes: tokens are never logged; error messages carry paths, ids and
 sizes only. The plugin-owned copy is written with best-effort 0600 perms.

@@ -2,10 +2,15 @@
 
 The live catalog comes from ``GET /v3/config`` (see upstream.py); these
 fallbacks cover the window before the first successful fetch and an offline
-start, captured from the same snapshots dsh-workbuddy-connect ships (MIT).
-Promotional badges are deliberately NOT baked in: they are time-boxed offers.
+start, captured from the same snapshots
+[dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+ships (MIT). Promotional badges are deliberately NOT baked in: they are
+time-boxed offers.
 
-Ported from corrinehu/dsh-workbuddy-connect ``src/catalog.ts`` + ``upstream.ts``.
+Ported from
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+``src/catalog.ts`` + ``upstream.ts``
+(MIT License, Copyright © 2026 Corrine Hu).
 """
 
 from __future__ import annotations

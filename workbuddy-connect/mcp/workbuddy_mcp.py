@@ -2,8 +2,10 @@
 
 A stdio MCP server exposing the signed-in WorkBuddy / WorkBuddy AI desktop
 session to ZCode: status, model catalog, chat, credits, diagnostics and
-logout. Protocol and tool behavior follow corrinehu/dsh-workbuddy-connect
-(MIT). The server speaks newline-delimited JSON-RPC 2.0 per the MCP stdio
+logout. Protocol and tool behavior follow
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)
+(MIT License, Copyright © 2026 Corrine Hu).
+The server speaks newline-delimited JSON-RPC 2.0 per the MCP stdio
 transport and uses only the Python standard library (``cryptography`` is
 needed only to decrypt WorkBuddy 5.6+ encrypted sign-in files).
 """

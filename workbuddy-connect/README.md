@@ -2,7 +2,9 @@
 
 把已登录的 **WorkBuddy（国内版）/ WorkBuddy AI（国际版）** 桌面应用接入 ZCode：零配置复用桌面登录态，通过 MCP 工具提供模型目录、对话、积分余额与诊断能力；同时由插件自带一个本地 OpenAI 兼容桥，把 WorkBuddy 模型注册成 ZCode 的普通模型供应商，直接出现在模型选择器和"模型设置"页。
 
-协议移植自 [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)（MIT）的 TypeScript 实现（其上游参照 workbuddy2api，MIT），本仓库为 Python 标准库实现，唯一可选依赖是 `cryptography`（仅解密 5.6+ 加密凭据需要）。
+## 致谢与来源
+
+本项目的协议实现移植自 **[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect)**（MIT License，Copyright © 2026 Corrine Hu）——一个把 WorkBuddy 桌面 App 接入 DeepSeek Harness 的插件；本仓库是其协议的 Python 重新实现，面向 ZCode，仅用 Python 标准库，唯一可选依赖是 `cryptography`（仅解密 5.6+ 加密凭据需要）。上游的工作又参照了 [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api)（MIT）。向两位作者致谢。
 
 ## 功能
 
